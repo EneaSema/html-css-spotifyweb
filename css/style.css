@@ -1,5 +1,11 @@
 /* regole reset */
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .container {
   box-sizing: border-box;
   margin: 0 auto;
@@ -12,7 +18,7 @@
 }
 
 .col {
-  width: 100&;
+  width: 100%;
 }
 
 img {
@@ -40,7 +46,7 @@ ul {
 
 .up {
   display: flex;
-  height: calc(100%-100px);
+  height: calc(100% - 100px);
 }
 
 .container-left {
@@ -136,7 +142,7 @@ ul {
 /* / sezione user */
 
 .container-right {
-  width: calc(100%-40px);
+  width: calc(100% - 40px);
   background-color: rgb(30, 37, 56);
   flex-grow: 1;
 }
@@ -145,10 +151,51 @@ ul {
   background-color: rgb(40, 40, 40);
   height: 100px;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.player-left {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem;
+}
+.player-left * {
+  margin-right: 1rem;
 }
 
 .player-left img {
-  width: 20px;
+  width: 40px;
+}
+
+/* / player left */
+
+/* player center */
+
+.icon-music {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.time-music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.time-total-song {
+  width: 300px;
+  height: 5px;
+  background-color: gray;
+}
+
+.time-heard-song {
+  width: 60px;
+  height: 5px;
+  background-color: lightgray;
 }
 
 /* MEDIA QUERY */
@@ -173,7 +220,7 @@ ul {
   /* sezione 3 tasti principali */
 
   .container-right {
-    width: calc(100%-300px);
+    width: calc(100% - 300px);
   }
 }
 
