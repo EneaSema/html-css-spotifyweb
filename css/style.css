@@ -45,9 +45,13 @@ ul {
 
 .container-left {
   width: 40px;
-  background-color: red;
+  background-color: rgb(0, 0, 0);
 }
 /* sezione loghi */
+
+.logo {
+  margin-top: 4px;
+}
 
 .log-small-spotify {
   width: 20px;
@@ -109,10 +113,13 @@ ul {
 
 .taste-bottom {
   margin-top: 400px;
+  margin-bottom: 0.5rem;
 }
 
 .icon-download {
-  width: 10px;
+  margin-bottom: 16px;
+  width: 16px;
+  margin-left: 3px;
 }
 
 .background-user {
@@ -130,14 +137,18 @@ ul {
 
 .container-right {
   width: calc(100%-40px);
-  background-color: blue;
+  background-color: rgb(30, 37, 56);
   flex-grow: 1;
 }
 
-footer {
-  background-color: rgb(0, 0, 16, 1);
+.player {
+  background-color: rgb(40, 40, 40);
   height: 100px;
   color: white;
+}
+
+.player-left img {
+  width: 20px;
 }
 
 /* MEDIA QUERY */
