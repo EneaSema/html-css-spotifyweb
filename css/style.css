@@ -20,6 +20,7 @@ img {
 }
 
 a {
+  text-decoration: none;
   color: inherit;
 }
 
@@ -46,7 +47,7 @@ ul {
   width: 40px;
   background-color: red;
 }
-/* sezione loghi e testo app */
+/* sezione loghi */
 
 .log-small-spotify {
   width: 20px;
@@ -58,6 +59,59 @@ ul {
   display: none;
   margin-left: 0.5rem;
 }
+
+/* / sezione loghi */
+
+/* sezione 3 tasti principali */
+
+.menu-icon img {
+  width: 20px;
+}
+
+.menu-icon span {
+  display: none;
+}
+
+.indicator {
+  display: none;
+  height: 5px;
+  border: 3px solid green;
+}
+
+.taste-top,
+.taste-bottom {
+  margin-left: 0.5rem;
+}
+
+.taste-top {
+  margin-top: 0.5rem;
+}
+
+.taste-bottom {
+  margin-top: 400px;
+}
+
+/* / sezione 3 tasti principali */
+
+/* sezione playlist */
+
+.playlist {
+  display: none;
+}
+
+/* / sezione playlist */
+
+/* sezione user */
+
+.taste-bottom img {
+  width: 20px;
+}
+
+.taste-bottom span {
+  display: none;
+}
+
+/* / sezione user */
 
 .container-right {
   width: calc(100%-40px);
@@ -78,6 +132,8 @@ footer {
     width: 300px;
   }
 
+  /* sezione loghi */
+
   .log-small-spotify {
     display: none;
   }
@@ -85,6 +141,10 @@ footer {
   .log-big-spotify {
     display: block;
   }
+
+  /* / sezione loghi */
+
+  /* sezione 3 tasti principali */
 
   .container-right {
     width: calc(100%-300px);
