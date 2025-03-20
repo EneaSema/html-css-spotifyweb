@@ -87,10 +87,6 @@ ul {
   margin-top: 0.5rem;
 }
 
-.taste-bottom {
-  margin-top: 400px;
-}
-
 /* / sezione 3 tasti principali */
 
 /* sezione playlist */
@@ -109,6 +105,25 @@ ul {
 
 .taste-bottom span {
   display: none;
+}
+
+.taste-bottom {
+  margin-top: 400px;
+}
+
+.icon-download {
+  width: 10px;
+}
+
+.background-user {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: gray;
+}
+
+.icon-user {
+  margin-left: 2px;
 }
 
 /* / sezione user */
