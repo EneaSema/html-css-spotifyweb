@@ -37,36 +37,30 @@ ul {
 
 /* / regole reset */
 
-main {
-  background-color: rgb(0, 255, 85);
-}
-
 .up {
   display: flex;
-  height: calc(100%-50px);
+  height: calc(100%-100px);
 }
 
 .container-left {
-  width: 50px;
+  width: 40px;
   background-color: red;
 }
+/* sezione loghi e testo app */
 
-.icon-top {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+.log-small-spotify {
+  width: 20px;
+  margin-left: 0.5rem;
 }
 
-h6 {
+.log-big-spotify {
+  width: 100px;
   display: none;
-}
-
-.icont-top-playlist {
-  display: none;
+  margin-left: 0.5rem;
 }
 
 .container-right {
-  width: calc(100%-50px);
+  width: calc(100%-40px);
   background-color: blue;
   flex-grow: 1;
 }
@@ -74,21 +68,24 @@ h6 {
 footer {
   background-color: rgb(0, 0, 16, 1);
   height: 100px;
+  color: white;
 }
 
 /* MEDIA QUERY */
 
-@media and (min-width: 639px) {
+@media screen and (min-width: 639px) {
   .container-left {
     width: 300px;
   }
-  h6 {
-    display: inline;
+
+  .log-small-spotify {
+    display: none;
   }
 
-  .icont-top-playlist {
+  .log-big-spotify {
     display: block;
   }
+
   .container-right {
     width: calc(100%-300px);
   }
