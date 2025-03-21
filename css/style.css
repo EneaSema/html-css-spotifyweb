@@ -115,6 +115,13 @@ ul {
   display: none;
 }
 
+.container-create-playlist {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2rem 0;
+}
+
 .add-playlist {
   width: 30px;
   height: 30px;
@@ -124,26 +131,44 @@ ul {
   justify-content: center;
 }
 
+.name-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
 /* / sezione playlist */
 
 /* sezione user */
-
-.taste-bottom img {
-  width: 20px;
-}
-
-.taste-bottom span {
-  display: none;
-}
 
 .taste-bottom {
   margin-top: 420px;
 }
 
+.download,
+.user {
+  display: flex;
+  gap: 0.5rem;
+}
+.download {
+  margin-bottom: 1rem;
+}
+
 .icon-download {
-  margin-bottom: 16px;
   width: 16px;
   margin-left: 3px;
+}
+
+.download-text {
+  display: none;
+}
+
+.separator {
+  display: none;
+  background-color: gray;
+  height: 3px;
+  width: 90%;
+  margin: 0.5rem 0;
 }
 
 .background-user {
@@ -154,7 +179,10 @@ ul {
 }
 
 .icon-user {
-  margin-left: 2px;
+  overflow: hidden;
+}
+.name-user {
+  display: none;
 }
 
 /* / sezione user */
@@ -334,7 +362,22 @@ ul {
     display: block;
   }
 
+  .taste-bottom {
+    margin-top: 70px;
+  }
+
+  .separator,
+  .download-text {
+    display: inline-block;
+  }
+
   /* / sezione playlist */
+
+  /* sezione user */
+
+  .name-user {
+    display: block;
+  }
 
   /* / sezione loghi */
 
