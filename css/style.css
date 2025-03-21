@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  color: lightgray;
+}
+
 .container {
   box-sizing: border-box;
   margin: 0 auto;
@@ -74,6 +78,10 @@ ul {
 
 /* sezione 3 tasti principali */
 
+.menu-icon {
+  cursor: pointer;
+}
+
 .menu-icon img {
   width: 20px;
 }
@@ -82,10 +90,12 @@ ul {
   display: none;
 }
 
-.indicator {
+.indicator-home,
+.indicator-search,
+.indicator-library {
   display: none;
-  height: 5px;
-  border: 3px solid green;
+  height: 1rem;
+  border-left: 3px solid lime;
 }
 
 .taste-top,
@@ -103,6 +113,15 @@ ul {
 
 .playlist {
   display: none;
+}
+
+.add-playlist {
+  width: 30px;
+  height: 30px;
+  background-color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* / sezione playlist */
@@ -140,9 +159,12 @@ ul {
 
 /* / sezione user */
 
+/* container-right */
+
 .container-right {
   width: calc(100% - 40px);
   background-color: rgb(30, 37, 56);
+  color: white;
 }
 
 /* player */
@@ -209,6 +231,8 @@ ul {
   background-color: lightgray;
 }
 
+/* / player center */
+
 /* player right */
 
 .player-right {
@@ -238,11 +262,15 @@ ul {
   background-color: lightgray;
 }
 
+/* / player right */
+
 /* MEDIA QUERY */
 
 @media screen and (min-width: 639px) {
+  /* container-left */
+
   .container-left {
-    width: 300px;
+    width: 200px;
   }
 
   /* sezione loghi */
@@ -254,13 +282,66 @@ ul {
   .log-big-spotify {
     display: block;
   }
+  /* sezione loghi */
+
+  .logo {
+    margin-top: 4px;
+  }
+
+  /* / sezione loghi */
+
+  /* sezione 3 tasti principali */
+
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    gap: 0.5rem;
+  }
+
+  .menu-icon img {
+    width: 20px;
+  }
+
+  .menu-icon span {
+    display: inline-block;
+  }
+
+  .indicator-home {
+    display: inline-block;
+  }
+  .indicator-search {
+    display: none;
+  }
+  .indicator-library {
+    display: none;
+  }
+
+  .taste-top,
+  .taste-bottom {
+    margin-left: 0.5rem;
+  }
+
+  .taste-top {
+    margin-top: 0.5rem;
+  }
+
+  /* / sezione 3 tasti principali */
+
+  /* sezione playlist */
+
+  .playlist {
+    display: block;
+  }
+
+  /* / sezione playlist */
 
   /* / sezione loghi */
 
   /* sezione 3 tasti principali */
 
   .container-right {
-    width: calc(100% - 300px);
+    width: calc(100% - 200px);
   }
 }
 
