@@ -20,6 +20,10 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
+.col-1-4 {
+  width: calc(100% - 4);
+}
 .col-1-6 {
   width: calc(100% - 6);
 }
@@ -63,6 +67,9 @@ ul {
 .container-left {
   width: 40px;
   background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 /* sezione loghi */
 
@@ -72,13 +79,11 @@ ul {
 
 .log-small-spotify {
   width: 20px;
-  margin-left: 0.5rem;
 }
 
 .log-big-spotify {
   width: 100px;
   display: none;
-  margin-left: 0.5rem;
 }
 
 /* / sezione loghi */
@@ -113,10 +118,6 @@ ul {
 .taste-top,
 .taste-bottom {
   margin-left: 0.5rem;
-}
-
-.taste-top {
-  margin-top: 0.5rem;
 }
 
 /* / sezione 3 tasti principali */
@@ -234,6 +235,7 @@ ul {
   width: calc(100% - 40px);
   background-color: rgb(30, 37, 56);
   color: white;
+  overflow: scroll;
 }
 
 #upgrade {
@@ -256,19 +258,19 @@ ul {
 
 .btn-upgrade-select {
   display: none;
+}
+
+.btn-upgrade:hover .btn-upgrade-select {
+  display: block;
   cursor: pointer;
   width: 300px;
   height: 60px;
   border-radius: 33px;
   background-color: rgb(26, 4, 1);
-  border: 1px solid;
-  color: white;
+  border: 1px solid red;
+  color: red;
   text-align: center;
   margin: 16px 0px;
-}
-
-.btn-upgrade:hover .btn-upgrade-select {
-  display: none;
 }
 
 #menu-list ul {
@@ -296,7 +298,7 @@ h1 {
 }
 
 .img-music-list {
-  width: 200px;
+  width: 220px;
 }
 
 /* / container-right */
@@ -368,19 +370,31 @@ h1 {
   width: 300px;
   height: 5px;
   background-color: gray;
+  cursor: pointer;
 }
 
 .time-heard-song {
   width: 60px;
-  height: 5px;
+  height: 100%;
   background-color: lightgray;
   border-radius: 2px;
   border: 2px solid gray;
+  position: relative;
 }
 
 .time-heard-song:hover {
   background-color: lime;
   border: 2px solid lime;
+}
+
+.time-heard-song:hover .ball-point {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 100%;
 }
 
 /* / player center */
@@ -396,23 +410,49 @@ h1 {
   flex: 1 1 0;
 }
 
+.icon-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .music-volume {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  margin-right: 24px;
 }
 
 .music-max {
-  min-width: 50px;
+  min-width: 100px;
   height: 5px;
-  background-color: gray;
+  background-color: darkgray;
+  cursor: pointer;
 }
 
 .music-use {
-  min-width: 30%;
+  width: 30%;
   height: 100%;
-  background-color: lightgray;
+  background-color: white;
+  border-radius: 2px;
+  border: 2px solid white;
+  position: relative;
+}
+
+.music-use:hover {
+  background-color: lime;
+  border: 2px solid lime;
+}
+
+.music-use:hover .ball-point {
+  width: 5px;
+  height: 5px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 0px;
+  left: 100%;
 }
 
 /* / player right */
@@ -513,6 +553,10 @@ h1 {
     overflow: scroll;
   }
 
+  .img-music-list {
+    width: 180px;
+  }
+
   /* sezione player */
 
   /* player-left */
@@ -525,8 +569,14 @@ h1 {
     color: white;
   }
   /* /player-left */
+}
 
-  /*player-center */
+/* Media Queri minimo 878px */
+
+@media screen and (min-width: 878px) {
+  .col-25 {
+    width: calc(100% / 4);
+  }
 }
 
 /* <!-- Height: 100vh; width: 100vw -->
