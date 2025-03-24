@@ -128,6 +128,10 @@ ul {
   display: none;
 }
 
+.title-playlist {
+  color: white;
+}
+
 .container-create-playlist {
   display: flex;
   align-items: center;
@@ -235,7 +239,6 @@ ul {
   width: calc(100% - 40px);
   background-color: rgb(30, 37, 56);
   color: white;
-  overflow: scroll;
 }
 
 #upgrade {
@@ -271,6 +274,10 @@ ul {
   color: red;
   text-align: center;
   margin: 16px 0px;
+}
+
+#menu-list {
+  overflow: auto;
 }
 
 #menu-list ul {
