@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Enea Sema" />
     <title>Spotify</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="favicon" />
+
+    <!-- font awesome -->
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
 
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -131,8 +139,13 @@
 
         <!-- sezione up right -->
         <div class="container-right">
-          <section id="btn-upgrade">
-            <button>EFFETTUA L'UPGRADE</button>
+          <section id="upgrade">
+            <button class="btn-upgrade">
+              <h2 class="title-btn-upgrade">EFFETTUA L'UPGRADE</h2>
+            </button>
+            <button class="btn-upgrade-select">
+              <h2 class="title-btn-upgrade">EFFETTUA L'UPGRADE1</h2>
+            </button>
           </section>
 
           <section id="menu-list">
@@ -142,6 +155,7 @@
                   IN EVIDENZA
                   <div class="seletor"></div>
                 </li>
+
                 <li>PODCAST</li>
                 <li>CLASSIFICHE</li>
                 <li>GENERI E MOOD</li>
@@ -149,6 +163,81 @@
                 <li>SCOPRI</li>
               </ul>
             </nav>
+          </section>
+
+          <section id="music-list">
+            <div class="container">
+              <div class="row">
+                <div class="col-100">
+                  <h1>Recently played</h1>
+                </div>
+                <div class="row">
+                  <div class="col-50">
+                    <img
+                      src="./img/metal_lifting.jpg"
+                      alt="album-lifting"
+                      class="img-music-list"
+                    />
+                    <h3 class="title-music-list">Heavy Metal</h3>
+                    <h5 class="subtitle-music-list">Subtitle</h5>
+                  </div>
+                  <div class="col-50">
+                    <img
+                      src="./img/stranger.jpeg"
+                      alt="album-stranger-things"
+                      class="img-music-list"
+                    />
+                    <h3 class="title-music-list">
+                      Stranger Things, Vol. 1 (a Netflix Original Series
+                      Soundtrack)
+                    </h3>
+                    <h5 class="subtitle-music-list">
+                      Kyle Dixon & Michal Stein
+                    </h5>
+                  </div>
+
+                  <div class="col-50">
+                    <img
+                      src="./img/aquietplace.jpeg"
+                      alt="album-stranger-things"
+                      class="img-music-list"
+                    />
+                    <h3 class="title-music-list">A quiet place</h3>
+                    <h5 class="subtitle-music-list">Subtitle</h5>
+                  </div>
+
+                  <div class="col-50">
+                    <img
+                      src="./img/split.jpeg"
+                      alt="album-stranger-things"
+                      class="img-music-list"
+                    />
+                    <h3 class="title-music-list">Split</h3>
+                    <h5 class="subtitle-music-list">Subtitle</h5>
+                  </div>
+
+                  <div class="col-50">
+                    <img
+                      src="./img/cure.jpeg"
+                      alt="album-stranger-things"
+                      class="img-music-list"
+                    />
+                    <h3 class="title-music-list">A cure for wellness</h3>
+                    <h5 class="subtitle-music-list">Subtitle</h5>
+                  </div>
+
+                  <div class="col-50">
+                    <img
+                      src="./img/sinister.jpeg"
+                      alt="album-stranger-things"
+                      class="img-music-list"
+                    />
+                    <h3 class="title-music-list">Sinister</h3>
+                    <h5 class="subtitle-music-list">Subtitle</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>
@@ -166,8 +255,7 @@
           </div>
           <div class="info-song">
             <div class="name-album">Sinister</div>
-            <div class="name-song">Brano</div>
-            <div class="name-singer">Nome</div>
+            <div class="name-song-singer">Brano Cantante</div>
           </div>
           <div class="bags">
             <div class="love-song">&hearts;</div>
